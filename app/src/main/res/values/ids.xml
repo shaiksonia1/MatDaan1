@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="phonenumber" type="id" />
+    <item name="Name" type="id" />
+    <item name="Fathersname" type="id" />
+    <item name="drawer_layout" type="id" />
+    <item name="nav_view" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="nav_home" type="id" />
+    <item name="activity_main" type="id" />
+    <item name="nv" type="id" />
+    <item name="Dashboard" type="id" />
+</resources>

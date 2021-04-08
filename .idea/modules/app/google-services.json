@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "434843236364",
+    "project_id": "matdaan-5a846",
+    "storage_bucket": "matdaan-5a846.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434843236364:android:8a6669fb83b59425481629",
+        "android_client_info": {
+          "package_name": "com.sonia.matdaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434843236364-lsjbrt23dalb0589rnbs42el6vev4q4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sonia.matdaan",
+            "certificate_hash": "11889a3b2335bac7f13fce496b9d760ee48cd82a"
+          }
+        },
+        {
+          "client_id": "434843236364-lqfrfh6u3a71dipi315s5jtbu8m84be5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbRQB72wA-Bpb5-CRR6c7qjD7gSdLEFd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434843236364-lqfrfh6u3a71dipi315s5jtbu8m84be5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

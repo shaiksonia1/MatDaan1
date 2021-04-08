@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F3C52"
+    tools:context=".Inc">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="19dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/sarad" />
+
+    <ImageView
+        android:id="@+id/ncp"
+        android:layout_width="95dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/ncp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:id="@+id/rahul"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/days_one"
+        android:text="SHARAD PAWAR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#EDB66E"
+        android:textSize="20dp" >
+
+    </TextView>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rahul"
+        android:background="#fff"
+
+        android:fillViewport="true">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="391dp"
+            android:layout_height="491dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:fontFamily="@font/hind_madurai_medium"
+            android:text="@string/des_ncp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

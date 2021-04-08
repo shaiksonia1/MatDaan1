@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F3C52"
+    tools:context="mainpage">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginStart="40dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/imgUserProfile"
+        android:layout_marginLeft="40dp">
+
+        <!--        <EditText-->
+<!--            android:id="@+id/aadhar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Aadhar number"-->
+<!--            android:background="@drawable/et_style"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="#101010"-->
+<!--            android:layout_marginTop="30dp"-->
+
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rf"
+            android:layout_marginRight="100dp">
+
+        </ImageView>
+
+
+
+        <EditText
+            android:id="@+id/editTextMobile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/color"
+            android:padding="10dp"
+            android:hint="Phone number"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/color"
+
+            android:text="Continue"
+            android:textColor="#FDFDFD" />
+
+        <EditText
+            android:id="@+id/et_Otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

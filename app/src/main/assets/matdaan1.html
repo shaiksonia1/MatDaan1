@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MatDaan</title>
+    <link rel="icon" href="pp.png" type="image/icon type">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Times New Roman,Times,serif;
+  margin: 1;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #1F3C52;
+  font-size: 30px;
+  color: white;
+  font-family: Lucida Handwriting,cursive
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #EDB66E;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #AFEEEE;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1F3C52;
+    color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+
+
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>MatDaan</h1>
+    <h5>A way towards online voting </h5>
+    <h2>One <b>vote</b> can rock the boat</h2>
+</div>
+
+<div class="navbar">
+    <h4><a href="#" class="active">About MatDaan</a>
+        <a href="Contact.html">Contact Us</a>
+    </h4>
+
+</div>
+
+<div class="row">
+    <div class="side">
+        <h1>About Us</h1>
+        <h2>NAMASTE</h2>
+        <img src="po.png" alt="NAMASTE">
+        <h2>We are Digitalizing you !! </h2>
+        <h3><img src="pp.png" style="height:100px;"><br>
+            <div class="fakeimg" style="height:60px;">Discription</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div></h3>
+    </div>
+    <div class="main">
+        <h1 style="background-color:Orange;"><center>ONLINE VOTING </center></h1>
+        <h2><center>A way towards digitalized India</center></h2>
+        <img src="hh.jpg" alt="vote">
+        <p>The main motive of creating <b>MatDaan</b> (e-voting) is to fulfill over the government word of
+            maintaining the social distancing in this pandemic of covid-19. <br>As MatDaan will give
+            people to cast their votes by sitting at their place and also not doing the gathering over a
+            place. Not only in this pandemic, application is useful after this covid-19. People who are
+            disabled or not able to go and cast their vote MatDaan will give them a platform to vote.</br><br>
+            An electronic voting system which is used nowadays provide some characteristic
+            different from the traditional voting technique, and also it provides improved features of
+            voting system over traditional voting system such as accuracy, convenience, flexibility,
+            privacy, verifiability and mobility. E-voting solutions can increase the security of the
+            ballot, speed up the processing of results and make voting easier. This is a voting system
+            by which any voter can use his/her voting rights from anywhere in the country</br></p>
+        <br>
+        <h2>About Features Of MatDaan</h2>
+        <img src="hi.jpeg" alt="explore">
+        <p>We are taking all the necessary features in the knowledege for this app some of them are
+            given bellow: <br>
+            • Voters can vote remotely or during a meeting using their cellphone, computer, tablet. <br>
+            •Voting is completed using a simple, easy to use, tech-friendly ballot.<br>
+            • Help voters choose by including a biography, vision, campaign promises and contact
+            information. <br>
+            • Personal voting keys are created and used only once. <br>
+            • Proper security will be provided on the fraud voting. <br>
+            • Provide fast results as compared to traditional voting system.</p>
+    </div>
+</div>
+</body>
+</html>

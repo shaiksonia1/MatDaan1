@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F3C52"
+    tools:context=".Bjp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/nmm"
+        android:contentDescription="TODO" />
+
+
+
+    <ImageButton
+        android:id="@+id/bjp1"
+        android:layout_width="74dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bjpp">
+
+    </ImageButton>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/modi"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/days_one"
+        android:text="@string/narendra_damodardas_modi"
+        android:textColor="#EDB66E"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20dp" >
+
+
+    </TextView>
+
+    <ScrollView
+        android:layout_below="@id/modi"
+        android:layout_width="wrap_content"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:fontFamily="@font/hind_madurai_medium"
+            android:text="@string/description_bjp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </ScrollView>
+
+
+    </RelativeLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1F3C52"
+    tools:context=".Workers">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:text="WORKERS"
+        android:textColor="#ffff"
+        android:textSize="50dp">
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/color"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/phn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/color"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/wn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/color"
+        android:hint=" Worker Name "
+        android:inputType="textPersonName"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/wi"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:hint=" Worker Id    "
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:background="@drawable/color"/>
+
+    <EditText
+        android:id="@+id/com"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/color"
+        android:hint="Complaint:"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btnstyle"
+        android:backgroundTint="#EDB66E"
+        android:text="Submit"
+        android:textColor="#FFFEFE"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="658dp" />
+
+
+</LinearLayout>

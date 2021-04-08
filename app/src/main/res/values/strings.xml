@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">MatDaan</string>
+
+    <string name="navigation_drawer_open">open navigation drawer</string>
+
+    <string name="navigation_drawer_close">open navigation drawer</string>
+    <string name="title_activity_split">Split</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="Open" />
+    <string name="Close" />
+    <string name="description_bjp"><b>AGRICULTURE</b>\
+
+Launch a pension scheme for small and marginal farmers to ensure social security after 60 years of age. \
+
+• Strive to ensure all-weather connectivity for every village. \
+
+• Work towards digitising land records.\
+
+
+YOUTH AND EDUCATION \
+
+• Aim to cover all the secondary schools under Operation Digital Board. \
+
+• Enable investment of . 1 lakh crore in higher education through Revitalising of Infrastructure and Systems in Education (RISE). \
+
+• Work towards increasing the number of seats in premier management institutes.\
+
+INFRASTRUCTURE \
+
+• Ensure a pucca house to every family. \
+
+• Ensure the LPG gas cylinder connection to all poor rural households. \
+
+• Ensure 100% electrification of all households. \
+
+RAILWAY \
+
+• Ensure conversion of all viable rail tracks to broad gauge by 2022. \
+
+• Make all efforts to ensure electrification of all railway tracks by 2022. \
+
+• Start developing smart railway stations across India. \
+
+ECONOMY \
+
+• Further improve India’s rank in ‘Ease of Doing Business’ ranking. \
+
+• Work towards improving GDP share from manufacturing sector. \
+
+• Work towards doubling the total exports.\
+    </string>
+    <string name="narendra_damodardas_modi">NARENDRA DAMODARDAS MODI</string>
+    <string name="des_congress">JOB CREATION\
+        • Another key promise by the Congress party revolves around job creation and eradicating unemployment.\
+        • According to the manifesto, the Congress party plans to fill up 22 lakh vacancies by March 2020. \
+       • Over 10 lakh of those jobs would be provided in Gram Panchayats. \
+        • The party has also said that it would grant interest-free loans for the youth of the country for 3 years ahead of a new venture.\
+        NYAY SCHEME \
+        • The Congress reiterated its determination to introduce NYAY scheme, \
+       • under which 20 per cent of India poorest or around 5 crore poorest households will get Rs 6,000 as minimum income per month.\
+       • Therefore, each family will get Rs 72,000/annum. According to the party manifesto, it is a direct transfer benefit scheme. \
+       • The scheme is likely to cost Rs 3.6 lakh crore per annum.
+         6 per cent of GDP for education\
+        • The Congress party has also mentioned in its manifesto that at least 6 per \
+       • cent of the country GDP will be invested for enabling education for all.\
+    </string>
+
+    <string name="des_bsp">
+         • Mayawati announced recently that she will build a grand statue of the Hindu deity Parashurama —a Brahmin \
+        •  We will work on the policy of sarvjan hitay, sarvjan sukhayon coming to power.\
+        • Mayawati, however, said the coalition of opposition parties, if it formed the government at the centre after elections,\
+        would deliver better governance than what the Congress and the BJP governments had done in the last seven decades.\
+         •On the possibility of her emerging as the prime ministerial candidate, the BSP chief said there was no hurry to decide on the PM candidate. \
+        Let the elections be over first. The PM candidate will be decided only after elections.
+    </string>
+
+    <string name="des_cpi">
+    • The party that has helmed many farm movements in the last five years has promised in its manifesto that minimum support price should be 50% higher than the total cost of production.\
+    •The manifesto also promises a long standing demand of the trade unions that the statutory minimum wage should be fixed not less than ₹18,000 per month.\
+      •The party has promised a host of measures to defend democratic rights including working towards repealing laws such as the Sedition Law, Armed Forces Special Powers Act\(AFSPA), National Security Act (NSA) and defamation law.
+    </string>
+
+
+    <string name="des_tmc">
+         •We will reserve 80 per cent jobs in industries for locals by bringing a legislation and separate policy for the same to ensure that it is implemented. This will help in addressing unemployment,\
+       •Maharashtra already has a regulation for all industries that avail of incentives from the state government to employ 80 per cent local residents in non-supervisory roles and 50 per cent in supervisory roles.\
+         •Also on the cards are a Marathi language university, a cultural university in Nashik to preserve Marathi literature, folk art, culinary styles and so on, a low-cost ‘Marathi asmita’ tablet loaded with classical Marathi literature and at least one Marathi language library in every gram panchayat jurisdiction in Maharashtra.
+    </string>
+    <string name="des_ncp">
+         •We will reserve 80 per cent jobs in industries for locals by bringing a legislation and separate policy for the same to ensure that it is implemented. This will help in addressing unemployment,\
+       •Maharashtra already has a regulation for all industries that avail of incentives from the state government to employ 80 per cent local residents in non-supervisory roles and 50 per cent in supervisory roles.\
+         •Also on the cards are a Marathi language university, a cultural university in Nashik to preserve Marathi literature, folk art, culinary styles and so on, a low-cost ‘Marathi asmita’ tablet loaded with classical Marathi literature and at least one Marathi language library in every gram panchayat jurisdiction in Maharashtra.
+    </string>
+
+</resources>

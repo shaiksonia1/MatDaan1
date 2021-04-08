@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sonia.matdaan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="merge">
+        <activity android:name=".About_us"></activity>
+        <activity android:name=".ViewAnnouncement" />
+        <activity android:name=".Announcements" />
+        <activity android:name=".Fingerprint" />
+        <activity android:name=".Others" />
+        <activity android:name=".Animal" />
+        <activity android:name=".Utility" />
+        <activity android:name=".Workers" />
+        <activity android:name=".Locality" />
+        <activity android:name=".Dashboard1" />
+        <activity android:name=".Complaint" />
+        <activity android:name=".Atic" />
+        <activity android:name=".Ncp" />
+        <activity android:name=".Cpi" />
+        <activity android:name=".Bahujan" />
+        <activity android:name=".Parties" />
+        <activity android:name=".Inc" />
+        <activity android:name=".Matdaan" />
+        <activity android:name=".Bjp" />
+        <activity android:name=".Split" />
+        <activity android:name=".verify" />
+        <activity android:name=".Userinfo" />
+        <activity android:name=".create" />
+        <activity android:name=".cr2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainpage" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

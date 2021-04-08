@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth_bold</item>
+        <item>@font/bigshot_one</item>
+        <item>@font/biorhyme</item>
+        <item>@font/cormorant_upright_semibold</item>
+        <item>@font/days_one</item>
+        <item>@font/gentium_book_basic_bold</item>
+        <item>@font/hind_madurai_medium</item>
+        <item>@font/love_ya_like_a_sister</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/rasa_light</item>
+        <item>@font/rasa_semibold</item>
+        <item>@font/righteous</item>
+    </array>
+</resources>
