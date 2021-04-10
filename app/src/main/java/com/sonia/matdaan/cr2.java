@@ -26,7 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.theartofdev.edmodo.cropper.CropImage;
+
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -105,7 +105,7 @@ public class cr2 extends AppCompatActivity {
                 usermap.put("voterid" ,voterid);
                 usermap.put("name" , getIntent().getStringExtra("name"));
                 usermap.put("fathersname" , getIntent().getStringExtra("fname"));
-                usermap.put("mothersname" , getIntent().getStringExtra("sname"));
+                usermap.put("mothersname" , getIntent().getStringExtra("mname"));
                 usermap.put("aadhar", getIntent().getStringExtra("aadhaar"));
                 usermap.put("phone" , getIntent().getStringExtra("phone"));
                 usermap.put("voted", "no");
