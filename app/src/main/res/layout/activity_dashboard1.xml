@@ -67,6 +67,7 @@
                     android:layout_width="117dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
+                    android:onClick="results"
                     android:scaleType="centerCrop"
                     android:src="@drawable/rss" />
 
