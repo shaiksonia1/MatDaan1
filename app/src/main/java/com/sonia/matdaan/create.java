@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +43,9 @@ public class create extends AppCompatActivity {
     DatabaseReference reference;
     public static  String userID;
 
+    private RadioGroup radioGroup;
+    private RadioButton radioButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +65,8 @@ public class create extends AppCompatActivity {
         radiosexFemale = findViewById(R.id.radioButtonFemale);
         radiosexothers = findViewById(R.id.radioButtonOthers);
 
+        radioGroup = findViewById(R.id.radioGroup);
+
         DatabaseReference = FirebaseDatabase.getInstance().getReference("gender");
         FirebaseAuth = FirebaseAuth.getInstance();
         userID = FirebaseAuth.getCurrentUser().getUid();
@@ -75,17 +81,9 @@ public class create extends AppCompatActivity {
                 final String Aadhar = mAadhar.getText().toString();
                 final String Phone = mPhone.getText().toString();
 
-                if(radiosexMale.isChecked()){
-                    sex="Male";
-                    if(radiosexFemale.isChecked()){
-                        sex ="Female";
-                        if(radiosexothers.isChecked()){
-                            sex ="others";
-
-                        }
-
-                    }
-                }
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                radioButton = findViewById(radioId);
+                String sex = radioButton.getText().toString();
 
 //                HashMap<String , String>userMap = new HashMap<>();
 //
@@ -107,6 +105,7 @@ public class create extends AppCompatActivity {
                             intent.putExtra("mname", Mothersname);
                             intent.putExtra("phone", Phone);
                             intent.putExtra("aadhaar", Aadhar);
+                            intent.putExtra("sex", sex);
                             startActivity(intent);
                         }
 //                    }

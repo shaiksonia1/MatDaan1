@@ -99,4 +99,8 @@ BottomNavigationView bottomNavigationView;
         });
 
     }
+
+    public void results(View view) {
+        startActivity(new Intent(getApplicationContext(), Results.class));
+    }
 }

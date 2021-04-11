@@ -5,16 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 
 public class Bahujan extends AppCompatActivity {
@@ -22,7 +26,7 @@ public class Bahujan extends AppCompatActivity {
     FirebaseUser mUser;
     String user_id;
     DatabaseReference mVoteRef, mUserRef;
-    int count;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,29 +45,24 @@ public class Bahujan extends AppCompatActivity {
         bhu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
+
+                mUserRef.child("voted").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.child("voted").getValue().toString().equals("no")) {
-                            mVoteRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        if (snapshot.getValue().toString().equals("no")){
+                            mVoteRef.child("BSP").push().setValue(ServerValue.TIMESTAMP).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
-                                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                    String counts = snapshot.child("BAHUJAN").getValue().toString();
-                                    count = Integer.parseInt(counts);
-                                    count++;
-
-                                }
-
-                                @Override
-                                public void onCancelled(@NonNull DatabaseError error) {
-
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()){
+                                        mUserRef.child("voted").setValue("yes");
+                                    }else {
+                                        Log.d("TASKKK", "onComplete: " + task.getException().getMessage());
+                                    }
                                 }
                             });
-                            mVoteRef.child("BAHUJAN").setValue("" + count);
-                            mUserRef.child("voted").setValue("yes");
-                            startActivity(new Intent(Bahujan.this, Matdaan.class));
-                        } else {
-                            Toast.makeText(Bahujan.this, "User already voted", Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            Toast.makeText(Bahujan.this, "You have already voted.", Toast.LENGTH_SHORT).show();
                         }
                     }
 
