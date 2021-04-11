@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,6 +61,7 @@ public class Userinfo extends AppCompatActivity {
                 status.setText(snapshot.child("voted").getValue().toString());
 
                 String url = snapshot.child("image").toString();
+                Log.d("LINKK", "Image Link: "+url);
 
                 Picasso.get().load(url).placeholder(R.drawable.ic_user).into(image);
 
