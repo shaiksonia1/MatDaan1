@@ -60,8 +60,8 @@ public class Userinfo extends AppCompatActivity {
                 aadhaar.setText(snapshot.child("aadhar").getValue().toString());
                 status.setText(snapshot.child("voted").getValue().toString());
 
-                String url = snapshot.child("image").toString();
-                Log.d("LINKK", "Image Link: "+url);
+                String url = snapshot.child("image").getValue().toString();
+
 
                 Picasso.get().load(url).placeholder(R.drawable.ic_user).into(image);
 

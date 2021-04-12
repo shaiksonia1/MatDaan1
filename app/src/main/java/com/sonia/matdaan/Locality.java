@@ -60,7 +60,7 @@ public class Locality extends AppCompatActivity {
                 userMap.put("ad", mad);
                 userMap.put("pin", mpin);
                 userMap.put("com", mcom);
-                root.child(userID).setValue(userMap);
+                root.push().child(userID).setValue(userMap);
 
                 Toast toast=Toast.makeText(getApplicationContext(),"Your complaint has been sent successfully",Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
