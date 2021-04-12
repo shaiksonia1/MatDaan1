@@ -103,4 +103,8 @@ BottomNavigationView bottomNavigationView;
     public void results(View view) {
         startActivity(new Intent(getApplicationContext(), Results.class));
     }
+
+    public void news(View view) {
+        startActivity(new Intent(getApplicationContext(), TrendingNews.class));
+    }
 }

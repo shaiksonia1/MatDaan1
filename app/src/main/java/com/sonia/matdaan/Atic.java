@@ -45,31 +45,10 @@ public class Atic extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                mUserRef.child("voted").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.getValue().toString().equals("no")){
-                            mVoteRef.child("ATIC").push().setValue(ServerValue.TIMESTAMP).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful()){
-                                        mUserRef.child("voted").setValue("yes");
-                                    }else {
-                                        Log.d("TASKKK", "onComplete: " + task.getException().getMessage());
-                                    }
-                                }
-                            });
-                        }
-                        else {
-                            Toast.makeText(Atic.this, "You have already voted.", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });
+                Intent intent  = new Intent(getApplicationContext(), Fingerprint.class);
+                intent.putExtra("party", "ATIC");
+                startActivity(intent);
+                finish();
 
             }
         });

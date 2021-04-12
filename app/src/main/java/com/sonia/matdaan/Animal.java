@@ -56,7 +56,7 @@ public class Animal extends AppCompatActivity {
                 userMap.put("ad", mad);
                 userMap.put("ta", mta);
                 userMap.put("is", mis);
-                root.child(userID).setValue(userMap);
+                root.push().child(userID).setValue(userMap);
                 Toast toast=Toast.makeText(getApplicationContext(),"Your complaint has been sent successfully",Toast.LENGTH_SHORT);
                 toast.setMargin(50,50);
                 toast.show();
